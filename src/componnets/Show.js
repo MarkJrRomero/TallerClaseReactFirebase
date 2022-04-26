@@ -50,12 +50,7 @@ const Show = () => {
         })    
       }
 
-      function aleatorio(minimo,maximo){
-        let num = Math.floor(Math.random() * ((maximo+1)-minimo)+minimo);
-        let link = "https://picsum.photos/id/"+num+"/200/200"
-
-        return link
-      }
+      
 
       useEffect( () => {
         getItems()
@@ -86,7 +81,7 @@ const Show = () => {
             <tbody>
               { lista.map( (lista) => (
                 <tr key={lista.id}>
-                  <td><img src={aleatorio(1,1000)}/></td>
+                  <td><img src={lista.Logo}/></td>
                   <td>{lista.Item1}</td>
                   <td>{lista.Item2}</td>
                   <td>{lista.Item3}</td>
