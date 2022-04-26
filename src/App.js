@@ -1,7 +1,7 @@
 import './App.css';
 import Show from './componnets/Show'
 import Create from './componnets/Creat'
-import Edit from './componnets/Show'
+import Edit from './componnets/Edit'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
